@@ -1,0 +1,707 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap");
+
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  font-weight: 700;
+}
+a:hover {
+  color: #ff5353;
+  cursor: pointer;
+  text-decoration: none;
+}
+a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+section {
+  display: block;
+  position: relative;
+  padding: 50px 0;
+  width: 100%;
+}
+.btn-default {
+  background-color: #ff5353;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 0.8;
+  min-width: 170px;
+  padding: 20px 25px;
+}
+.btn-default:hover {
+  text-decoration: none;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.05);
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul li {
+  font-family: 'Roboto', sans-serif;
+}
+.header-top {
+  background: #fef7f6;
+  padding: 5px 0;
+}
+.header-top span {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.header-top .text-left span {
+  padding-right: 15px;
+}
+.header-top .text-right .languague {
+  display: inline-flex;
+}
+.header-top .text-right .languague ul {
+  display: none;
+}
+.header-top .text-right span {
+  padding-right: 15px;
+}
+.header-top .text-right span:last-child {
+  padding-right: 0;
+}
+.menu-dropdown {
+  color: #000;
+  cursor: pointer;
+  display: block;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+.navbar-nav {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.navbar-nav .current-menu-item:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.navbar-nav li {
+  position: relative;
+}
+.navbar-nav li .sub-menu {
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 220px;
+  z-index: 9;
+}
+.navbar-nav li .sub-menu li a {
+  padding: 20px 15px;
+}
+.navbar-nav li .sub-menu li:hover {
+  background: #fef7f6;
+}
+.navbar-nav li a {
+  color: #000;
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 0.8;
+  padding: 40px 15px;
+  text-transform: uppercase;
+}
+.navbar-nav li a:hover {
+  color: #ff5353;
+  text-decoration: none;
+  cursor: pointer;
+}
+.list-icon a {
+  color: #000;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 0.8;
+  text-transform: uppercase;
+  margin-right: 15px;
+  position: relative;
+}
+.list-icon a:last-child {
+  margin-right: 0;
+}
+.list-icon a .itemCount {
+  position: absolute;
+  background-color: #ff5353;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  top: -12px;
+  right: -9px;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}
+.list-icon a:hover {
+  color: #ff5353;
+  text-decoration: none;
+  cursor: pointer;
+}
+.banner {
+  background-image: url('../images/bg-1.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+.banner .banner-content {
+  max-width: 475px;
+  text-align: center;
+  float: right;
+  width: 100%;
+}
+.banner .banner-content .tagline {
+  color: #565656;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 0.8;
+  letter-spacing: 2.8px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.banner .banner-content h1 {
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 70px;
+  margin-bottom: 45px;
+  margin-top: 25px;
+}
+/* 2. Feature produc */
+.most-product,
+.feature-product,
+.trendding-product,
+.journal-silon,
+.instagram {
+  margin-top: 30px;
+}
+.most-product .heading-product,
+.feature-product .heading-product,
+.trendding-product .heading-product,
+.journal-silon .heading-product,
+.instagram .heading-product {
+  text-align: center;
+  width: 100%;
+  margin: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.most-product .heading-product p,
+.feature-product .heading-product p,
+.trendding-product .heading-product p,
+.journal-silon .heading-product p,
+.instagram .heading-product p {
+  font-size: 36px;
+}
+.most-product .post-content .meta-tags a,
+.feature-product .post-content .meta-tags a,
+.trendding-product .post-content .meta-tags a,
+.journal-silon .post-content .meta-tags a,
+.instagram .post-content .meta-tags a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.most-product .post-content .meta-tags a i,
+.feature-product .post-content .meta-tags a i,
+.trendding-product .post-content .meta-tags a i,
+.journal-silon .post-content .meta-tags a i,
+.instagram .post-content .meta-tags a i {
+  padding-right: 10px;
+}
+.most-product .post-content a.date-time,
+.feature-product .post-content a.date-time,
+.trendding-product .post-content a.date-time,
+.journal-silon .post-content a.date-time,
+.instagram .post-content a.date-time {
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  text-transform: capitalize;
+  margin-bottom: 0;
+  padding-left: 30px;
+}
+.most-product .post-content a.date-time:before,
+.feature-product .post-content a.date-time:before,
+.trendding-product .post-content a.date-time:before,
+.journal-silon .post-content a.date-time:before,
+.instagram .post-content a.date-time:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 6px;
+  background-color: #ff5353;
+  top: 0;
+  margin-top: 5px;
+  left: 0;
+  border-radius: 3px;
+}
+.most-product .post-content a:hover,
+.feature-product .post-content a:hover,
+.trendding-product .post-content a:hover,
+.journal-silon .post-content a:hover,
+.instagram .post-content a:hover {
+  color: #ff5353;
+  cursor: pointer;
+  text-decoration: none;
+}
+.most-product .post-content h3,
+.feature-product .post-content h3,
+.trendding-product .post-content h3,
+.journal-silon .post-content h3,
+.instagram .post-content h3 {
+  font-size: 20px;
+  line-height: 30px;
+  border-bottom: 3px solid #ededed;
+  padding-bottom: 30px;
+}
+.most-product .post-content h3 a,
+.feature-product .post-content h3 a,
+.trendding-product .post-content h3 a,
+.journal-silon .post-content h3 a,
+.instagram .post-content h3 a {
+  color: #000;
+}
+.most-product .post-content .meta-tags,
+.feature-product .post-content .meta-tags,
+.trendding-product .post-content .meta-tags,
+.journal-silon .post-content .meta-tags,
+.instagram .post-content .meta-tags {
+  padding-top: 20px;
+}
+.most-product .post-content .meta-tags .post-meta.comments,
+.feature-product .post-content .meta-tags .post-meta.comments,
+.trendding-product .post-content .meta-tags .post-meta.comments,
+.journal-silon .post-content .meta-tags .post-meta.comments,
+.instagram .post-content .meta-tags .post-meta.comments {
+  padding-left: 20px;
+}
+.most-product .product-item,
+.feature-product .product-item,
+.trendding-product .product-item,
+.journal-silon .product-item,
+.instagram .product-item {
+  position: relative;
+}
+.most-product .product-item:hover .thumb-image .action-links,
+.feature-product .product-item:hover .thumb-image .action-links,
+.trendding-product .product-item:hover .thumb-image .action-links,
+.journal-silon .product-item:hover .thumb-image .action-links,
+.instagram .product-item:hover .thumb-image .action-links {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+.most-product .product-item .thumb-image,
+.feature-product .product-item .thumb-image,
+.trendding-product .product-item .thumb-image,
+.journal-silon .product-item .thumb-image,
+.instagram .product-item .thumb-image {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+.most-product .product-item .thumb-image .action-links,
+.feature-product .product-item .thumb-image .action-links,
+.trendding-product .product-item .thumb-image .action-links,
+.journal-silon .product-item .thumb-image .action-links,
+.instagram .product-item .thumb-image .action-links {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+}
+.most-product .product-item .thumb-image .action-links a,
+.feature-product .product-item .thumb-image .action-links a,
+.trendding-product .product-item .thumb-image .action-links a,
+.journal-silon .product-item .thumb-image .action-links a,
+.instagram .product-item .thumb-image .action-links a {
+  background-color: #fff;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  padding: 17px;
+}
+.most-product .product-item .thumb-image .action-links a:hover,
+.feature-product .product-item .thumb-image .action-links a:hover,
+.trendding-product .product-item .thumb-image .action-links a:hover,
+.journal-silon .product-item .thumb-image .action-links a:hover,
+.instagram .product-item .thumb-image .action-links a:hover {
+  background-color: #ff5353;
+  color: #fff;
+}
+.most-product .product-item .thumb-image .action-links a:hover i,
+.feature-product .product-item .thumb-image .action-links a:hover i,
+.trendding-product .product-item .thumb-image .action-links a:hover i,
+.journal-silon .product-item .thumb-image .action-links a:hover i,
+.instagram .product-item .thumb-image .action-links a:hover i {
+  color: #fff;
+}
+.most-product .product-item .thumb-image .action-links a i,
+.feature-product .product-item .thumb-image .action-links a i,
+.trendding-product .product-item .thumb-image .action-links a i,
+.journal-silon .product-item .thumb-image .action-links a i,
+.instagram .product-item .thumb-image .action-links a i {
+  color: #000;
+  display: inline-block;
+  font-size: 14px;
+}
+.most-product .product-item .product-content,
+.feature-product .product-item .product-content,
+.trendding-product .product-item .product-content,
+.journal-silon .product-item .product-content,
+.instagram .product-item .product-content {
+  text-align: center;
+}
+.most-product .product-item .product-content h5,
+.feature-product .product-item .product-content h5,
+.trendding-product .product-item .product-content h5,
+.journal-silon .product-item .product-content h5,
+.instagram .product-item .product-content h5 {
+  margin-bottom: 0;
+}
+.most-product .product-item .product-content h5 a,
+.feature-product .product-item .product-content h5 a,
+.trendding-product .product-item .product-content h5 a,
+.journal-silon .product-item .product-content h5 a,
+.instagram .product-item .product-content h5 a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.most-product .product-item .product-content .ratings a,
+.feature-product .product-item .product-content .ratings a,
+.trendding-product .product-item .product-content .ratings a,
+.journal-silon .product-item .product-content .ratings a,
+.instagram .product-item .product-content .ratings a {
+  color: #ff5353;
+}
+.most-product .product-item .product-content .price,
+.feature-product .product-item .product-content .price,
+.trendding-product .product-item .product-content .price,
+.journal-silon .product-item .product-content .price,
+.instagram .product-item .product-content .price {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.most-product .instagram-item a,
+.feature-product .instagram-item a,
+.trendding-product .instagram-item a,
+.journal-silon .instagram-item a,
+.instagram .instagram-item a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.most-product .instagram-item a i,
+.feature-product .instagram-item a i,
+.trendding-product .instagram-item a i,
+.journal-silon .instagram-item a i,
+.instagram .instagram-item a i {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.most-product .instagram-item a::before,
+.feature-product .instagram-item a::before,
+.trendding-product .instagram-item a::before,
+.journal-silon .instagram-item a::before,
+.instagram .instagram-item a::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 83, 83, 0.7);
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.most-product .instagram-item a:hover:before,
+.feature-product .instagram-item a:hover:before,
+.trendding-product .instagram-item a:hover:before,
+.journal-silon .instagram-item a:hover:before,
+.instagram .instagram-item a:hover:before {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.most-product .instagram-item a:hover i,
+.feature-product .instagram-item a:hover i,
+.trendding-product .instagram-item a:hover i,
+.journal-silon .instagram-item a:hover i,
+.instagram .instagram-item a:hover i {
+  opacity: 1;
+  visibility: visible;
+}
+/* End Feature produc */
+/* 3.banner-after-product */
+.banner-after-product {
+  background: #ebe4db;
+}
+.banner-after-product .banner-content {
+  max-width: 475px;
+  text-align: center;
+  float: right;
+  width: 100%;
+}
+.banner-after-product .banner-content h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+  font-size: 58px;
+}
+.banner-after-product .banner-content p {
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 54px;
+}
+/* end banner-after-product */
+/* 4.Features */
+.features .item-box {
+  border: 1px solid #ededed;
+  padding: 30px;
+  text-align: center;
+}
+.features .item-box img {
+  max-width: 56px;
+  margin: 0 auto 27px;
+}
+.features .item-box h5 {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.features .item-box p {
+  margin-bottom: 0;
+  color: #888;
+  line-height: 18px;
+}
+/* 5.footer */
+.footer {
+  background: #ebe4db;
+  display: block;
+  position: relative;
+  padding: 50px 0;
+  width: 100%;
+  margin-top: 30px;
+}
+.footer .widget h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.footer .app-btn {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d6d8d9;
+  padding-bottom: 30px;
+}
+.footer .app-btn a {
+  flex-basis: 48%;
+  padding: 12px 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: relative;
+  padding-left: 35px;
+}
+.footer .app-btn a:hover {
+  background-color: #ff5353;
+  cursor: pointer;
+}
+.footer .app-btn a:hover i,
+.footer .app-btn a:hover p,
+.footer .app-btn a:hover span {
+  color: #fff;
+}
+.footer .app-btn a i {
+  color: #ff5353;
+  font-size: 20px;
+  margin-right: 5px;
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.footer .app-btn a p {
+  margin-bottom: 0;
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 0.8;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.footer .app-btn a p span {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: #4a4a4a;
+  line-height: 0.8;
+  margin-bottom: 5px;
+}
+.footer .app-btn a.app-store {
+  color: #fff;
+  background-color: #ff5353;
+}
+.footer .app-btn a.app-store span,
+.footer .app-btn a.app-store i,
+.footer .app-btn a.app-store p {
+  color: #fff;
+}
+.footer .app-btn .app-btn a.app-store {
+  background-color: #ff5353;
+}
+.footer .social-media a {
+  display: inline-block;
+  font-size: 14px;
+  color: #000;
+  background-color: #fff;
+  line-height: 32px;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+}
+.footer .social-media a:not(:last-child) {
+  margin-right: 10px;
+}
+.footer .social-media a i {
+  line-height: 32px;
+}
+.footer .social-media a:hover {
+  background-color: #ff5353;
+  cursor: pointer;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  #mobile-menu-toggler {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .header-top {
+    display: none;
+  }
+  .header-menu .navbar-nav {
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 100%;
+    z-index: 9;
+    display: block;
+  }
+  .header-menu .navbar-nav li a {
+    padding: 20px 15px;
+  }
+  section {
+    padding: 0;
+  }
+  .banner h1 {
+    font-size: 40px;
+    line-height: 56px;
+    margin-bottom: 35px;
+  }
+  .banner .banner-content {
+    margin: 50px 0;
+  }
+  .heading-product p {
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 1.4;
+  }
+  .banner-after-product {
+    padding: 60px 0 0;
+    margin: 30px 0;
+  }
+  .banner-after-product h1 {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  .widget {
+    margin-bottom: 30px;
+  }
+}
